@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+.nav-links{
+    background: #160e24;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links img{
+    height: 50px;
+}
+.right_side_nav{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.right_side_nav h3{
+    color: white;
+    font-size: 15px;
+    padding: 0 10px;
+}
+i.fa.fa-bell{
+    color: white;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+.user{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 1px;
+    padding: 0 10px;
+}
+i.fa.fa-caret-down{
+    color: red;
+}
+.left{
+    display: flex;
+    background:  #251c3b;
+    flex-direction: column;
+    align-items: center;
+    height: 127vh;
+    width: 5vw;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50vh;
+}
+i.fa-solid.fa-circle-info,i.fa-solid.fa-circle-play,i.fa-solid.fa-laptop,i.fa-solid.fa-gears,i.fa-solid.fa-cloud,i.fa-brands.fa-facebook-square{
+    color: white;
+    background:  #251c3b;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 30px 0;
+}
+.home_icons{
+    margin-top: 50%;
+}
+i.fa-solid.fa-house{
+    color: white;
+    background: #251c3b;
+    font-size: 25px;
+}
+.right{
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+.right_container{
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    margin-top: 5vh;
+}
+.right_container p{
+    margin: 10px 0;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 245, 245, 0.932);
+    cursor: pointer;
+    align-items: center;
+    margin: 10px 20px;
+    width: 15vw;
+    height: 33vh;
+    flex-basis: 21%;
+    border-radius: 10px;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+    margin: 10px auto;
+}
+.card p {
+    text-align: center;
+    font-weight: bold;
+    font-weight: 800;
+}
+.connect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    justify-content: space-evenly;
+    margin: 15px 0;
+    width: 15vw;
+}
+.round{
+    color: rgb(0, 255, 0);
+}
+.connect p{
+    color: black;
+}
+.card button{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    justify-content: space-between;
+    background: rgb(255, 63, 63);
+    padding: 10px;
+    border: 0;
+    width: 15vw;
+    border-radius: 5px;
+}
+i.fa-solid.fa-arrow-right-long{
+    color: white;
+    margin: 0 5px;
+}
+
+@media  screen and (max-width:768px) {
+    .cards{
+       flex-direction: column;
+    }
+    .card{
+       width: 75vw;
+    }
+    .connect{
+        width: 50vw;
+    }
+    .card button{
+        width: 50vw;
+    }
+    .icons{
+        margin-bottom: 100vh;
+    }
+    .left{
+        height: 495.2vh;
+    }
+}
